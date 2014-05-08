@@ -1,0 +1,4 @@
+django>=1.6
+pytz==2014.2
+South
+django-messages-extends==0.2
