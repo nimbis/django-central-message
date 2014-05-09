@@ -7,7 +7,7 @@ reqs = parse_requirements("requirements/common.txt")
 # setup the project
 setup(
     name="django-central-message",
-    version="0.0.1",
+    version="0.1.0",
     author="Nimbis Services, Inc.",
     author_email="info@nimbisservices.com",
     description="Wrapper for extends-messages to send to multiple users (all "
