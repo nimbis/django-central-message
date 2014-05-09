@@ -1,7 +1,6 @@
 import os
 from django.test import TestCase
 
-
 # class SimpleTestCase(TestCase):
 #    '''
 #    Simple test cases that verifies basic model functionality.

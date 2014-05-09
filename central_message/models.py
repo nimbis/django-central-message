@@ -24,6 +24,11 @@ class CentralMessage(Message):
         blank=True, null=True)
 
     def generate(self):
+        """
+        Generate a Message per User, associate it with a CentralUserMessage.
+        Called from admin action.
+        """
+
         users = User.objects.all()
         for user in users:
             if user == self.user:
@@ -54,8 +59,10 @@ class CentralUserMessage(models.Model):
 
     # SET_NULL avoids recursive .delete() between CentralUserMessage and
     # Message
-    message = models.OneToOneField(Message, null=True,
-                                   on_delete=models.SET_NULL)
+    message = models.OneToOneField(
+        Message,
+        null=True,
+        on_delete=models.SET_NULL)
 
     master = models.ForeignKey(
         CentralMessage,

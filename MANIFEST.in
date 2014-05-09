@@ -1,3 +1,2 @@
 include README.md
-recursive-include central_message/templates *.html
 recursive-include requirements *.txt
