@@ -8,7 +8,7 @@ History
 
 0.1.3:
 
-    * Removing pip >= 1.6 requirement from setup.py.
+    * Removing pip >= 6.0 requirement from setup.py.
 
 0.1.2:
 
