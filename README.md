@@ -6,6 +6,10 @@ Wrapper for extends-messages to send to multiple users (all for now) from the ad
 History
 -------
 
+0.1.3:
+
+    * Removing pip >= 1.6 requirement from setup.py.
+
 0.1.2:
 
     * Add support for Django 1.7 migrations.
