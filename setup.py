@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 # setup the project
 setup(
     name="django-central-message",
-    version="0.1.2",
+    version="0.1.3",
     author="Nimbis Services, Inc.",
     author_email="info@nimbisservices.com",
     description="Wrapper for extends-messages to send to multiple "
