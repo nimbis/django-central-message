@@ -1,9 +1,4 @@
 from setuptools import setup, find_packages
-from pip.req import parse_requirements
-from uuid import uuid1
-
-# parse requirements
-reqs = parse_requirements("requirements/common.txt", session=uuid1())
 
 # setup the project
 setup(
@@ -15,7 +10,11 @@ setup(
     "for now) from the admin page..",
     license="BSD",
     packages=find_packages(exclude=["tests", ]),
-    install_requires=[str(x).split(' ')[0] for x in reqs],
+    install_requires=[
+        'Django',
+        'pytz',
+        'django-messages-extends',
+    ],
     zip_safe=False,
     include_package_data=True,
     test_suite="tests.main",
