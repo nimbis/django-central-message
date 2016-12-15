@@ -1,1 +1,13 @@
--r requirements/testing.txt
+-e .
+
+django
+pytz==2014.2
+django-messages-extends==0.2
+
+coverage
+setuptools-pep8
+sphinx
+sphinx-rtd-theme
+flake8
+
+git+https://github.com/dcramer/piplint.git#egg=piplint
