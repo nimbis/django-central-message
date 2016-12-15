@@ -1,9 +1,5 @@
 -e .
 
-django
-pytz==2014.2
-django-messages-extends==0.2
-
 coverage
 setuptools-pep8
 sphinx
